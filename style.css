@@ -162,7 +162,8 @@ h2 {
 }
 
 .my_skills {
-    margin: 50px 0 50px 0;
+    margin-top: 146px;
+    margin-bottom: 146px;
 }
 
 .my_skills2 {
@@ -170,8 +171,6 @@ h2 {
     max-width: 100%;
     flex-direction: row;
     align-items: center;
-    margin-top: 146px;
-    margin-bottom: 146px;
 }
 
 .my_skills_text {
@@ -183,8 +182,9 @@ h2 {
     height: 450px;
 }
 
-.progress {
-    height: 2px;
+progress {
+    height: 4px;
+    width: 445px;
 }
 
 .video {
