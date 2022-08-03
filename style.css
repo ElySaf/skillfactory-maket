@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet');
 
+
 html,
 body {
   margin: 0 auto;
@@ -35,11 +36,10 @@ p,
     padding: 0;
 }
 
-.section_first {
+.header {
     background: #EEEFF1;
 }  
 
-.logo_menu,
 .write_me {
     display: inline-flex;
     max-width: 100%;
@@ -49,14 +49,8 @@ p,
     margin-bottom: 146px;
 }
 
-.logo {
-    
-}
-
-
 .navbar {
     padding: 0;
-    margin-top: 79px;
     text-transform: uppercase;
 }
 
@@ -82,7 +76,7 @@ p,
     display: none;
     border: none;
     outline: none;
-    /*margin-left: -1em;*/
+    margin-left: -1em;
     list-style-type: none;
     font-size: 1.2rem;
     font-weight: 600;
@@ -98,14 +92,6 @@ p,
     font-size: 1.5rem;
 }
 
-.row_2 {
-    margin-top: 162px;
-}
-
-p,
-h1 {
-    margin-bottom: 60px;
-}
 
 .button_write {
     width: 225px;
@@ -114,23 +100,30 @@ h1 {
     color: #ffffff;
 }
 
-.about_me {
-    margin-top: 112px;
-}
-
-h2 {
-    margin-bottom: 50px;
-}
 
 .p_text {
     text-align: center;
-    margin-bottom: 100px;
 }
 
-.section_third {
+.skillbar {
     background:  #34547A;
+    color: white;
+    margin-top: 85px;
+    margin-bottom: 85px;
 }
 
+.skillbar_container-items {
+    list-style-type: none;
+}
+
+.skillbar_container-item-text {
+    margin-left: 10px;
+}
+
+.skillbar_container-item-img {
+    width: 46.67px;
+    height: 50px;
+}
 .gallery {
     display: flex;
     flex-direction: row;
@@ -149,34 +142,24 @@ h2 {
     color: #ffffff;
 }
 
-.section_fifth {
-    background: #EEEFF1;
-}
 
 .work {
+    background: #EEEFF1;
     margin-top: 100px;
 }
 
-.row_8 {
-    margin-bottom: 50px;
-}
 
 .my_skills {
-    margin-top: 146px;
-    margin-bottom: 146px;
-}
-
-.my_skills2 {
     display: inline-flex;
     max-width: 100%;
     flex-direction: row;
     align-items: center;
 }
 
-.my_skills_text {
-    margin: 50px;
-}
 
+.my_skills_progress {
+    list-style-type: none;
+}
 .img_my_skills {
     width: 555px;
     height: 450px;
@@ -207,4 +190,4 @@ progress {
 
 .form-group-1 {
     padding: 0;
-}
+} 
