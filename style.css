@@ -1,5 +1,164 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet');
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+    font-weight: 500;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+input {
+    border: none;
+}
+
+img {
+    max-width: 100%;
+}
 
 html,
 body {
@@ -12,13 +171,21 @@ body {
   font-family: 'Roboto', sans-serif; 
 }
 
-.h1, h1 {
-    font-size: 3rem;
+.h1_title {
+    font-size: 48px;
 }
 
-.h2, h2 {
-    font-size: 2rem;
+.h2_title
+ {
+    font-size: 32px;
 }
+/* .h1, h1 {
+    font-size: 3rem;
+} */
+
+/* .h2, h2 {
+    font-size: 2rem;
+} */
 
 .section {
     max-width: 1920px;
@@ -118,9 +285,6 @@ body {
     height: 50px;
 }
 .gallery {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     margin-top: 100px;
     margin-bottom: 30px;
 }
@@ -141,18 +305,10 @@ body {
     margin-top: 100px;
 }
 
-
-.my_skills {
-    display: inline-flex;
-    max-width: 100%;
-    flex-direction: row;
-    align-items: center;
-}
-
-
 .my_skills_progress {
     list-style-type: none;
 }
+
 .img_my_skills {
     width: 555px;
     height: 450px;
@@ -166,6 +322,37 @@ progress {
 .video {
     margin-bottom: 100px;
     max-width: 100%;
+}
+
+.collage-img {
+    width: 480px;
+    height: 480px;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(52, 84, 122, 0);
+    transition: background-color 0.3s;
+}
+
+.collage-img::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(52,84,122);
+    opacity: 0;
+    background-image: url(/img/Vector.svg);
+    background-position: 50% 50%;
+    transition: opacity 0.3s;
+}
+
+.collage-img img {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+}
+
+.collage-img:hover::after {
+    opacity: 0.8;
 }
 
 #inputMessage {
