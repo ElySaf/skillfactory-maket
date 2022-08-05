@@ -175,30 +175,37 @@ body {
     font-size: 48px;
 }
 
-.h2_title
- {
+.h2_title {
     font-size: 32px;
-}
-/* .h1, h1 {
-    font-size: 3rem;
-} */
+ }
 
-/* .h2, h2 {
-    font-size: 2rem;
-} */
+.h3_text {
+    font-size: 19px;
+}
 
 .section {
     max-width: 1920px;
     padding: 0;
+    overflow: hidden;
 }
 .container {
     max-width: 1113px;
     padding: 0;
 }
+.container-fluid {
+    width: 1920px;
+    padding: 0;
+}
 
-.header {
+.head {
     background: #EEEFF1;
+    padding-top: 46px;
 }  
+
+.logo {
+    Width: 115.2px;
+    Height: 72px;
+}
 
 .write_me {
     display: inline-flex;
@@ -207,6 +214,23 @@ body {
     align-items: center;
     margin-top: 146px;
     margin-bottom: 146px;
+}
+
+.p_write_me, 
+.p_text {
+    font-size: 16px;
+    line-height: 26.25px;
+    color: #727272;
+    padding-top: 50px;
+}
+
+.p_write_me {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.p_text {
+    text-align: center;
 }
 
 .navbar {
@@ -225,7 +249,6 @@ body {
 }
 
 .nav-link  {
-    font-family: Roboto;
     font-weight: 500;
     font-size: 1rem;
     line-height: 26px;
@@ -252,24 +275,22 @@ body {
     font-size: 1.5rem;
 }
 
-
 .button_write {
     width: 225px;
     height: 65px;
     background: #34547A;
     color: #ffffff;
+    text-transform: uppercase;
 }
 
-
-.p_text {
-    text-align: center;
+.about_me {
+    padding: 100px 0 100px 0;
 }
 
 .skillbar {
     background:  #34547A;
     color: white;
-    margin-top: 85px;
-    margin-bottom: 85px;
+    padding: 100px 0 100px 0;
 }
 
 .skillbar_container-items {
@@ -277,7 +298,7 @@ body {
 }
 
 .skillbar_container-item-text {
-    margin-left: 10px;
+    padding-left: 10px;
 }
 
 .skillbar_container-item-img {
@@ -285,8 +306,7 @@ body {
     height: 50px;
 }
 .gallery {
-    margin-top: 100px;
-    margin-bottom: 30px;
+    padding-top: 60px;
 }
 
 .img_gallery {
@@ -299,14 +319,22 @@ body {
     color: #ffffff;
 }
 
-
 .work {
+    padding: 100px 0 100px 0;
     background: #EEEFF1;
-    margin-top: 100px;
+}
+
+.my_skills {
+    padding: 100px 0 100px 0;
+}
+
+.my_skills_title {
+    padding-top: 100px;
 }
 
 .my_skills_progress {
     list-style-type: none;
+    padding-top: 30px;
 }
 
 .img_my_skills {
@@ -320,10 +348,13 @@ progress {
 }
 
 .video {
-    margin-bottom: 100px;
+    padding-top: 57px;
     max-width: 100%;
 }
 
+.collage {
+    padding-top: 28px;
+}
 .collage-img {
     width: 480px;
     height: 480px;
@@ -355,6 +386,10 @@ progress {
     opacity: 0.8;
 }
 
+.board {
+    padding: 72px 0 100px 0;
+}
+
 #inputMessage {
     height: 175px;
 }
@@ -368,6 +403,24 @@ progress {
     flex-wrap: wrap;
     }
 
+.form {
+    background: #EEEFF1;
+    padding: 100px 0 100px 0;
+}
+
+.my_form {
+    padding-top: 50px;
+}
 .form-group-1 {
     padding: 0;
 } 
+
+.p-copy {
+    margin-top: 32px;
+    font-size: 12px;
+}
+
+.social-img {
+    width: 43.75px;
+    height: 40px;
+}
